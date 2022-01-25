@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Open+Sans:wght@400;700;800&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background: #F1F1F1;
+  color: #3D3D3D;
+  font: normal 500 16px/25.89px "Inter";
+}
+
+label,
+input {
+  font: normal 600 16px/19.36px "Inter";
+}
+
+label {
+  color: #B6252A;
+}
+
+input {
+  color: #3D3D3D;
+}
+
+h1 {
+  font: normal 800 1.72em/36.7px "Open Sans";
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 24px;
+  color: #640A0D;
+}
+
+h2 {
+  font: normal 900 1.44em/37.3px "Inter";
+  color: #FFFFFF;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+h5,
+button {
+  font: normal 700 1.2em/31.07px "Open Sans";
+  color: #FFFFFF;
+}
+
+h6 {
+  font: normal 700 1.2em/31.1px "Inter";
+  color: #FFFFFF;
+}
+
+body > * {
+  padding: 24px;
+}
+
+.intro,
+.organizators,
+.partners,
+.footer {
+  background: #787A27;
+}
+
+div > h2 {
+  color: #B6252A;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 24px;
+}
+
+.intro > h2,
+.organizators > h2,
+.partners > h2,
+.footer h2 {
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 24px;
+  background: none;
+  border: 3px solid #B6252A;
+  border-radius: 10px;
+}
+input::placeholder {
+  color: rgba(0, 0, 0, 0.45);
+}
+input[type=radio] {
+  width: auto;
+}
+
+.inpt-block {
+  margin-bottom: 24px;
+}
+
+.footer h2 {
+  text-align: left;
+}
+
+figcaption {
+  text-align: center;
+}
+figure {
+  padding: 0 24px;
+}
+
+.intro > h6 {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 24px;
+}
+.intro > a {
+  display: inline-block;
+  transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+  margin: 24px 0;
+  padding: 12px 18px;
+  background: #FFFFFF;
+  color: #787A27;
+  border-radius: 40px;
+  text-align: center;
+}
+.intro > a > h6 {
+  color: #787A27;
+}
+
+.results > .container {
+  position: relative;
+  border: 3px solid #B6252A;
+}
+
+.results > .container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: rgba(42, 44, 47, 0.8);
+}
+.results > .container::after {
+  content: "2019";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  color: #FFFFFF;
+  font: normal 900 2em/35px "Inter";
+}
+
+.registration .registration_form {
+  position: relative;
+  overflow: hidden;
+}
+.registration .registration_form .page {
+  overflow: hidden;
+  min-width: 100%;
+  transition: 0.5s;
+  position: absolute;
+  left: -150%;
+}
+.registration .registration_form .page.active {
+  transition: 0.35s;
+  position: relative;
+  left: 0;
+}
+
+.registration .inpt-block .radio label {
+  margin-left: 12px;
+}
+.registration .btn_navigation {
+  display: flex;
+  align-items: center;
+}
+.registration .btn_navigation button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 40px;
+  border: none;
+  color: #FFFFFF;
+  background: #B6252A;
+}
+.registration .btn_navigation button:nth-child(1) {
+  border: 3px solid #B6252A;
+  background: none;
+  color: #B6252A;
+  margin-right: 10px;
+}
+.registration .btn_navigation button[disabled] {
+  display: none;
+}
+
+.footer ul {
+  list-style: none;
+  margin-bottom: 24px;
+}
+.footer ul li > a {
+  color: rgba(255, 255, 255, 0.9);
+  font: normal 400 1em/25.89px "Open Sans";
+}
+.footer p {
+  color: rgba(255, 255, 255, 0.9);
+  font: normal 400 0.83em/21.57px "Open Sans";
+}
